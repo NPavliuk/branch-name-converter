@@ -1,7 +1,9 @@
+import HomePage from '@views/HomePage/HomePage'
+
 function App() {
   return (
     <div>
-      hello world
+      <HomePage/>
     </div>
   )
 }
