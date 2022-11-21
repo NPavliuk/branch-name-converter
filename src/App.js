@@ -1,15 +1,8 @@
-import { ConverterInput } from '@components/converter/ConverterInput/ConverterInput'
-import { ConverterOutput } from '@components/converter/ConverterOutput/ConverterOutput'
-import { ConverterButton } from '@components/converter/ConverterButton/ConverterButton'
+import { Converter } from '@views/Converter'
 
-function App() {
-
+const App =() => {
   return (
-    <div>
-      <ConverterInput/>
-      <ConverterButton/>
-      <ConverterOutput/>
-    </div>
+    <Converter />
   )
 }
 

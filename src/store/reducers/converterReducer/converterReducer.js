@@ -8,13 +8,13 @@ const initialState = {
 
 export const converterReducer = (state = initialState, {type, payload}) => {
   switch (type) {
-    case actionsTypes.CHANGE_INPUT_VALUE:
+    case actionsTypes.SET_INPUT_VALUE:
       return {
         ...state,
         isConverted: false,
         inputValue: payload
       }
-    case actionsTypes.CHANGE_OUTPUT_VALUE:
+    case actionsTypes.SET_OUTPUT_VALUE:
       return {
         ...state,
         isConverted: false,
