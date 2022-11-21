@@ -1,9 +1,8 @@
-import HomePage from '@views/HomePage/HomePage'
-
 function App() {
   return (
     <div>
-      <HomePage/>
+      <input type="text" placeholder="enter text" />
+      <button type="button">convert</button>
     </div>
   )
 }
