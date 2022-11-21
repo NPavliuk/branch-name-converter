@@ -1,8 +1,14 @@
+import { ConverterInput } from '@components/converter/ConverterInput/ConverterInput'
+import { ConverterOutput } from '@components/converter/ConverterOutput/ConverterOutput'
+import { ConverterButton } from '@components/converter/ConverterButton/ConverterButton'
+
 function App() {
+
   return (
     <div>
-      <input type="text" placeholder="enter text" />
-      <button type="button">convert</button>
+      <ConverterInput/>
+      <ConverterButton/>
+      <ConverterOutput/>
     </div>
   )
 }
