@@ -1,0 +1,37 @@
+@import 'src/assets/styles/abstract/variables';
+@import 'src/assets/styles/abstract/mixins';
+
+.label {
+  display: flex;
+  position: relative;
+  @include font-styles(400, $font-size-p, 1.4, $color-white);
+}
+
+.input {
+  display: none;
+
+  &:checked + .mark {
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $color-primary-radio-active;
+    }
+  }
+}
+
+.mark {
+  display: block;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  margin-top: 3px;
+  margin-right: $spacing-xxxs;
+  border-radius: 50%;
+  background-color: $color-primary-radio;
+}

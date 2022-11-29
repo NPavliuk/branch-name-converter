@@ -3,13 +3,19 @@ import { ConverterButton } from '@views/Converter/ConverterForm/ConverterButton/
 import { ConverterOutput } from '@views/Converter/ConverterForm/ConverterOutput/ConverterOutput'
 import { ConverterClipBoardCopy } from '@views/Converter/ConverterForm/ConverterClipBoardCopy/ConverterClipBoardCopy'
 
+import styles from './ConverterForm.module.scss'
+
 export const ConverterForm = () => {
   return (
-    <div>
-      <ConverterInput/>
-      <ConverterButton/>
-      <ConverterOutput/>
-      <ConverterClipBoardCopy/>
+    <div className={styles.form}>
+      <div className={styles.form_item}>
+        <ConverterInput/>
+        <ConverterButton/>
+      </div>
+      <div className={styles.form_item}>
+        <ConverterOutput/>
+        <ConverterClipBoardCopy/>
+      </div>
     </div>
   )
 }

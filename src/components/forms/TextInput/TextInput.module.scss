@@ -1,0 +1,14 @@
+@import 'src/assets/styles/abstract/variables';
+@import 'src/assets/styles/abstract/mixins';
+
+.field {
+  width: 100%;
+  border: none;
+  border-radius: $spacing-xxxs;
+  padding: $spacing-xxxs $spacing-xxxs;
+  @include font-styles(400, $font-size-regular, 1.4, $color-black);
+
+  &:focus-visible {
+    outline: none;
+  }
+}

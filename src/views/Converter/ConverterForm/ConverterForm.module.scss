@@ -1,0 +1,18 @@
+@import 'src/assets/styles/abstract/variables';
+@import 'src/assets/styles/abstract/mixins';
+
+.form {
+  & > * {
+    margin-bottom: $spacing-xxs;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &_item {
+    display: grid;
+    grid-gap: $spacing-xxs;
+    grid-template-columns: 1fr 100px;
+  }
+}

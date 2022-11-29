@@ -1,0 +1,52 @@
+// Colors
+$color-black: #000000;
+$color-white: #FFFFFF;
+
+$color-primary-button: #EFEFEF;
+$color-primary-button-hover: #C2C2C2;
+
+$color-primary-radio: #EFEFEF;
+$color-primary-radio-active: #2A2629;
+
+$color-primary-bg: #2A2629;
+
+
+// Font families
+$font-primary: 'Arial', sans-serif;
+
+
+// Spacing
+$spacing-xxxxs: 4px;
+$spacing-xxxs: 8px;
+$spacing-xxs: 16px;
+$spacing-xs: 20px;
+$spacing-s: 24px;
+$spacing-m: 32px;
+$spacing-l: 40px;
+$spacing-xl: 48px;
+$spacing-xxl: 80px;
+$spacing-xxxl: 160px;
+
+
+// Font sizes
+$font-size-h1: 68px;
+$font-size-h2: 42px;
+$font-size-h3: 32px;
+$font-size-h4: 26px;
+$font-size-h5: 24px;
+
+$font-size-article: 18px;
+$font-size-regular: 16px;
+$font-size-p: 14px;
+$font-size-sm-caption: 12px;
+$font-size-xsm-caption: 10px;
+
+
+// Breakpoints sizes
+$breakpoints: (
+        'mobile': 567px,
+        'tablet': 768px,
+        'desktop-small': 992px,
+        'desktop': 1200px,
+        'desktop-large': 1440px,
+)

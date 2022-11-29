@@ -1,0 +1,44 @@
+// Including fonts via font-face; font-style is optional
+@mixin font-face($font_family, $font_weight, $font_name, $style: null) {
+  @font-face {
+    font-family: $font_family;
+    font-weight: $font_weight;
+    font-display: fallback;
+    src: local('#{$font_name}'),
+    url('/#{$font_name}.woff2') format('woff2'),
+    url('/#{$font_name}.woff') format('woff');
+
+    // If the style exist in the map
+    @if $style {
+      font-style: $style;
+    }
+  }
+}
+
+// Fonts main styles; Color param is optional
+@mixin font-styles($weight, $size, $line-height, $color: null) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+
+  // If the color exist in the map
+  @if $color {
+    color: $color;
+  }
+}
+
+// Media queries
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+
+    // If the key doesn't exist in the map
+  @else {
+    @warn 'Unfortunately, no value could be retrieved from `#{$breakpoint}`.' + 'Available breakpoints are: #{map-keys($breakpoints)}.';
+  }
+}

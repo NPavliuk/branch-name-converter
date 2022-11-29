@@ -10,6 +10,8 @@ export const ConverterClipBoardCopy = () => {
   }
 
   return (
-    <PrimaryButton name={'copy!'} handler={clickHandler} />
+    currentOutput !== ''
+      ? <PrimaryButton name={'Copy'} handler={clickHandler}/>
+      : null
   )
 }

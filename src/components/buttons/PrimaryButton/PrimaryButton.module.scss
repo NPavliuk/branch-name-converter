@@ -1,0 +1,20 @@
+@import 'src/assets/styles/abstract/variables';
+@import 'src/assets/styles/abstract/mixins';
+
+.button {
+  padding: $spacing-xxxs $spacing-xxs;
+  @include font-styles(400, $font-size-regular, 1.4, $color-black);
+  border: none;
+  cursor: pointer;
+  border-radius: $spacing-xxxs;
+  background-color: $color-primary-button;
+  transition: background-color .2s ease-in-out;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: $color-primary-button-hover;
+  }
+}
