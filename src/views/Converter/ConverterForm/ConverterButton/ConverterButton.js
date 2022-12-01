@@ -8,7 +8,9 @@ export const ConverterButton = () => {
   const currentInputValue = useSelector(state => state.converter.inputValue)
 
   const submitHandler = () => {
-    dispatch(convertToKebabCase(currentInputValue, options))
+    if (currentInputValue !== '') {
+      dispatch(convertToKebabCase(currentInputValue, options))
+    }
   }
 
   return (

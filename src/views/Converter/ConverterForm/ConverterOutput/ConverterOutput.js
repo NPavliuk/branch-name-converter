@@ -12,6 +12,6 @@ export const ConverterOutput = () => {
   }
 
   return (
-    <TextInput value={outputValue} handler={inputHandle} placeholder={'Your result'}/>
+    <TextInput value={outputValue} handler={inputHandle} placeholder={'Your branch name'}/>
   )
 }

@@ -3,7 +3,7 @@ import * as actionsTypes from '@utils/constsants/actionTypes'
 const initialState = {
   prefix: '',
   isAnyOptions: false,
-  defaultPrefixes: ['task', 'feature', 'bug', 'fix', 'hotfix', 'none']
+  defaultPrefixes: ['task', 'feature', 'bug', 'fix', 'hotfix']
 }
 
 export const optionsReducer = (state = initialState, {type, payload}) => {

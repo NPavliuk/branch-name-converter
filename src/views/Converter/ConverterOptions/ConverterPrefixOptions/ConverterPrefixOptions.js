@@ -3,10 +3,16 @@ import { useDispatch, useSelector } from 'react-redux'
 import { resetOptions, setPrefixOption } from '@store/reducers/optionsReducer/optionsActions'
 
 import styles from './ConverterPrefixOptions.module.scss'
+import { useEffect, useRef } from 'react'
 
 export const ConverterPrefixOptions = () => {
+  const radioRef = useRef()
   const dispatch = useDispatch()
   const prefixOptions = useSelector(state => state.options.defaultPrefixes)
+
+  useEffect(() => {
+    radioRef.current.checked = true
+  }, [])
 
   const radioHandle = (e) => {
     const currentPrefix = e.target.value
@@ -28,8 +34,10 @@ export const ConverterPrefixOptions = () => {
           id={`prefix-${prefixOption}`}
           value={prefixOption}
           groupName={'prefix'}
-          content={prefixOption === 'none' ? prefixOption : `${prefixOption}/~`}
+          content={`${prefixOption}/~`}
           handler={radioHandle}/>)}
+
+        <RadioInput id={`prefix-none`} value={'none'} groupName={'prefix'} content={'none'} handler={radioHandle} refHandler={radioRef} />
       </div>
     </div>
   )

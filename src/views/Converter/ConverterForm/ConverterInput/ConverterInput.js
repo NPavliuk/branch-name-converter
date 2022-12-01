@@ -12,6 +12,6 @@ export const ConverterInput = () => {
   }
 
   return (
-    <TextInput value={inputValue} handler={inputHandle} placeholder={'Enter string to convert'}/>
+    <TextInput value={inputValue} handler={inputHandle} placeholder={'Enter string'}/>
   )
 }
