@@ -1,7 +1,7 @@
 import styles from './PrimaryButton.module.scss'
 
-export const PrimaryButton = ({name, handler}) => {
+export const PrimaryButton = ({name, handler, refHandler}) => {
   return (
-    <button className={styles.button} type={'button'} onClick={handler}>{name}</button>
+    <button className={styles.button} type={'button'} onClick={handler} ref={refHandler}>{name}</button>
   )
 }

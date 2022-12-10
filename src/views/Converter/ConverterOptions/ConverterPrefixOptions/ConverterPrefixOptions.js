@@ -1,9 +1,9 @@
-import { RadioInput } from '@components/forms'
+import { useEffect, useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { RadioInput } from '@components/forms'
 import { resetOptions, setPrefixOption } from '@store/reducers/optionsReducer/optionsActions'
 
 import styles from './ConverterPrefixOptions.module.scss'
-import { useEffect, useRef } from 'react'
 
 export const ConverterPrefixOptions = () => {
   const radioRef = useRef()

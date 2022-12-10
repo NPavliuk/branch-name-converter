@@ -3,7 +3,7 @@ import * as actionsTypes from '@utils/constsants/actionTypes'
 const initialState = {
   inputValue: '',
   outputValue: '',
-  isConverted: false
+  isConverted: false,
 }
 
 export const converterReducer = (state = initialState, {type, payload}) => {

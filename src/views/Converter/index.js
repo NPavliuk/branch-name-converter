@@ -1,13 +1,12 @@
+import { MainLayout } from '@components/layouts'
 import { ConverterForm } from '@views/Converter/ConverterForm/ConverterForm'
 import { ConverterOptions } from '@views/Converter/ConverterOptions/ConverterOptions'
 
-import styles from './index.module.scss'
-
 export const Converter = () => {
   return (
-    <div className={styles.page}>
+    <MainLayout>
       <ConverterForm/>
       <ConverterOptions/>
-    </div>
+    </MainLayout>
   )
 }
