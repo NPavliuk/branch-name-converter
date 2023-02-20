@@ -1,0 +1,31 @@
+@import '../../../../assets/styles/abstract/variables';
+@import '../../../../assets/styles/abstract/mixins';
+
+.options {
+  @include respond-to('tablet') {
+    display: flex;
+  }
+}
+
+.optionsTitle {
+  min-width: 95px;
+  margin-bottom: $spacing-xxs;
+  text-align: center;
+  @include font-styles(400, $font-size-regular, 1.4, $color-white);
+
+  @include respond-to('tablet') {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
+.optionsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-xxxs $spacing-xxs;
+  margin: 0 $spacing-xs;
+
+  @include respond-to('tablet') {
+    margin: 2px 0 0 $spacing-xs;
+  }
+}

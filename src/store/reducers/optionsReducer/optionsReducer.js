@@ -1,4 +1,4 @@
-import * as actionsTypes from '@utils/constsants/actionTypes'
+import { actionTypes } from '@utils/constsants/actionTypes'
 
 const initialState = {
   prefix: '',
@@ -8,13 +8,13 @@ const initialState = {
 
 export const optionsReducer = (state = initialState, {type, payload}) => {
   switch (type) {
-    case actionsTypes.SET_PREFIX_OPTION:
+    case actionTypes.SET_PREFIX_OPTION:
       return {
         ...state,
         isAnyOptions: true,
         prefix: payload
       }
-    case actionsTypes.RESET_OPTIONS:
+    case actionTypes.RESET_OPTIONS:
       return {
         ...state,
         prefix: '',

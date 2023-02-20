@@ -2,14 +2,15 @@
 $color-black: #000000;
 $color-white: #FFFFFF;
 
-$color-primary-button: #EFEFEF;
-$color-primary-button-hover: #C2C2C2;
+$color-primary: #EFEFEF;
+$color-primary-hover: #C2C2C2;
+$color-primary-active: #2A2629;
+$color-primary-bg: #161B22;
 
-$color-primary-radio: #EFEFEF;
-$color-primary-radio-active: #2A2629;
-
-$color-primary-bg: #2A2629;
-
+$color-success: #238636;
+$color-success-hover: #2EA043;
+$color-danger: #F85149;
+$color-danger-hover: #DA3633;
 
 // Font families
 $font-primary: 'Arial', sans-serif;
@@ -35,6 +36,7 @@ $font-size-h3: 32px;
 $font-size-h4: 26px;
 $font-size-h5: 24px;
 
+$font-size-title: 20px;
 $font-size-article: 18px;
 $font-size-regular: 16px;
 $font-size-p: 14px;

@@ -4,7 +4,7 @@ import { PrimaryButton } from '@components/buttons'
 import { copyToClipboard } from '@utils/helpers/copyToClipboard'
 import { updateElementName } from '@utils/helpers/updateElementName'
 
-export const ConverterClipBoardCopy = () => {
+export const ConverterCopyButton = () => {
   const copyButtonRef = useRef()
   const currentOutput = useSelector(state => state.converter.outputValue)
 
@@ -16,6 +16,6 @@ export const ConverterClipBoardCopy = () => {
   return (
     currentOutput !== ''
       ? <PrimaryButton name={'Copy'} handler={clickHandler} refHandler={copyButtonRef}/>
-      : null
+      : <div></div>
   )
 }

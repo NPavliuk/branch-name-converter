@@ -2,10 +2,9 @@ import { useEffect, useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { RadioInput } from '@components/forms'
 import { resetOptions, setPrefixOption } from '@store/reducers/optionsReducer/optionsActions'
+import styles from './ConverterOptions.module.scss'
 
-import styles from './ConverterPrefixOptions.module.scss'
-
-export const ConverterPrefixOptions = () => {
+export const ConverterOptions = () => {
   const radioRef = useRef()
   const dispatch = useDispatch()
   const prefixOptions = useSelector(state => state.options.defaultPrefixes)
@@ -27,7 +26,7 @@ export const ConverterPrefixOptions = () => {
 
   return (
     <div className={styles.options}>
-      <h2 className={styles.optionsTitle}>Prefixes:</h2>
+      <h2 className={styles.optionsTitle}>Use prefixes:</h2>
       <div className={styles.optionsRow}>
         {prefixOptions.map(prefixOption => <RadioInput
           key={prefixOptions.indexOf(prefixOption)}

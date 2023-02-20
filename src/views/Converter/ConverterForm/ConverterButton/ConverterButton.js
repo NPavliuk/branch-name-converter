@@ -1,5 +1,5 @@
-import { PrimaryButton } from '@components/buttons'
 import { useDispatch, useSelector } from 'react-redux'
+import { PrimaryButton } from '@components/buttons'
 import { convertToKebabCase } from '@store/reducers/converterReducer/converterActions'
 
 export const ConverterButton = () => {
@@ -14,6 +14,6 @@ export const ConverterButton = () => {
   }
 
   return (
-    <PrimaryButton handler={submitHandler} name={'Convert'}/>
+    <PrimaryButton handler={submitHandler} name={'Convert'} modifyClass={'success'}/>
   )
 }

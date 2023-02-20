@@ -1,0 +1,38 @@
+@import 'src/assets/styles/abstract/variables';
+@import 'src/assets/styles/abstract/mixins';
+
+.title {
+  margin: $spacing-xs 0 $spacing-xxs;
+  text-align: center;
+  @include font-styles(700, $font-size-h4, 1.2, $color-white);
+
+  @include respond-to('tablet') {
+    @include font-styles(700, $font-size-h3, 1.2, $color-white);
+  }
+}
+
+.quote {
+  text-align: center;
+  margin-bottom: $spacing-s;
+
+  @include respond-to('tablet') {
+    margin-bottom: $spacing-l;
+  }
+
+  p {
+    margin-bottom: $spacing-xxs;
+    @include font-styles(300, $font-size-regular, 1.2, $color-white);
+
+    @include respond-to('tablet') {
+      @include font-styles(300, $font-size-title, 1.2, $color-white);
+    }
+  }
+
+  span {
+    @include font-styles(300, $font-size-p, 1.2, $color-white);
+
+    @include respond-to('tablet') {
+      @include font-styles(300, $font-size-regular, 1.2, $color-white);
+    }
+  }
+}

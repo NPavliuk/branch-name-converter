@@ -2,17 +2,45 @@
 @import 'src/assets/styles/abstract/mixins';
 
 .form {
-  & > * {
-    margin-bottom: $spacing-xxs;
+  display: grid;
+  grid-gap: $spacing-xxs;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'convertInput convertInput'
+    'convertButton convertButton'
+    'convertOutput convertOutput'
+    'copyButton clearButton'
+    'options options';
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+  @include respond-to('tablet') {
+    grid-template-columns: 1fr 100px;
+    grid-template-areas:
+    'convertInput convertButton'
+    'convertOutput copyButton'
+    'options clearButton';
   }
 
-  &_item {
-    display: grid;
-    grid-gap: $spacing-xxs;
-    grid-template-columns: 1fr 100px;
+  .convertInput {
+    grid-area: convertInput;
+  }
+
+  .convertButton {
+    grid-area: convertButton;
+  }
+
+  .convertOutput {
+    grid-area: convertOutput;
+  }
+
+  .copyButton {
+    grid-area: copyButton;
+  }
+
+  .options {
+    grid-area: options;
+  }
+
+  .clearButton {
+    grid-area: clearButton;
   }
 }

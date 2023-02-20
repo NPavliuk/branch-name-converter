@@ -1,4 +1,4 @@
-import * as actionsTypes from '@utils/constsants/actionTypes'
+import { actionTypes } from '@utils/constsants/actionTypes'
 
 const initialState = {
   inputValue: '',
@@ -8,19 +8,19 @@ const initialState = {
 
 export const converterReducer = (state = initialState, {type, payload}) => {
   switch (type) {
-    case actionsTypes.SET_INPUT_VALUE:
+    case actionTypes.SET_INPUT_VALUE:
       return {
         ...state,
         isConverted: false,
         inputValue: payload
       }
-    case actionsTypes.SET_OUTPUT_VALUE:
+    case actionTypes.SET_OUTPUT_VALUE:
       return {
         ...state,
         isConverted: false,
         outputValue: payload
       }
-    case actionsTypes.CONVERT_INPUT_VALUE:
+    case actionTypes.CONVERT_INPUT_VALUE:
       return {
         ...state,
         isConverted: true,

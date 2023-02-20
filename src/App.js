@@ -1,4 +1,4 @@
-import { Converter } from '@views/Converter'
+import { Converter } from '@views/Converter/Converter'
 
 const App =() => {
   return (

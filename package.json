@@ -1,15 +1,13 @@
 {
-  "name": "Branch Name Generator",
+  "name": "Branch Name Converter",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "concurrently": "^7.5.0",
+    "classnames": "^2.3.2",
     "craco": "^0.0.3",
-    "electron": "^21.3.0",
-    "electron-is-dev": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
@@ -24,11 +22,8 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject",
-    "electron": "wait-on tcp:3000 && electron .",
-    "dev": "concurrently -k 'BROWSER=none npm start' 'npm:electron'"
+    "eject": "craco eject"
   },
-  "main": "electron.js",
   "eslintConfig": {
     "extends": [
       "react-app",
