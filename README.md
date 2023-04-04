@@ -15,10 +15,9 @@ The Branch Name Convert App includes the following features:
 ## Setup project
 
 1. Clone the repository from GitHub `$ git clone https://github.com/NPavliuk/string-converter.git`.
-2. Install the dependencies using ``npm install`.
-4. Run the app using `npm run dev`.
-5. Navigate to http://localhost:3000 in your browser.
-
+2. Install the dependencies using `npm install`.
+3. Run the app using `npm run dev`.
+4. Navigate to http://localhost:3000 in your browser.
 
 ## Technologies
 
