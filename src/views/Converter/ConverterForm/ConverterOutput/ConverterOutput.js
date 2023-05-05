@@ -1,5 +1,5 @@
-import { TextInput } from '@components/forms'
 import { useDispatch, useSelector } from 'react-redux'
+import { TextInput } from '@components/forms'
 import { changeOutputValue } from '@store/reducers/converterReducer/converterActions'
 
 export const ConverterOutput = () => {

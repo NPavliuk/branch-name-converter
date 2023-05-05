@@ -1,6 +1,6 @@
+import styles from './Converter.module.scss'
 import { MainLayout } from '@components/layouts'
 import { ConverterForm } from '@views/Converter/ConverterForm/ConverterForm'
-import styles from './Converter.module.scss'
 
 export const Converter = () => {
   return (
