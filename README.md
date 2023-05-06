@@ -1,7 +1,7 @@
 # Branch Name Converter
 The Git branch names converter is a software application designed to help developers convert existing branch names into
 a standardized format. When working on a project with multiple collaborators, it's crucial to maintain consistency in
-naming conventions to ensure clear communication and avoid confusion.
+naming conventions to ensure clear communication and avoid confusion. You can try it here https://react-branch-name-converter.web.app
 
 <img src="src/assets/images/preview-in-work.png" alt="" width="100%">
 
